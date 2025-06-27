@@ -21,7 +21,7 @@ do
     FILE_EXTENSION='.exe'
   fi
 
-  env GOOS=${GOOS} GOARCH=${GOARCH} CGO_ENABLED=0 go build -o ${BUILD_DIR}/${package_name}${FILE_EXTENSION} -ldflags "-s -w $LD_FLAGS" cmd/main.go
+  env GOOS=${GOOS} GOARCH=${GOARCH} CGO_ENABLED=0 go build -o ${BUILD_DIR}/${package_name}${FILE_EXTENSION} -ldflags "-s -w" main.go
   if [ $? -ne 0 ]; then
     echo 'an error has occurred. aborting the build process'
     exit 1
