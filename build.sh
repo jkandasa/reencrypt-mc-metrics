@@ -14,7 +14,7 @@ do
   platform_raw=(${platform//\// })
   GOOS=${platform_raw[0]}
   GOARCH=${platform_raw[1]}
-  package_name="reencrypt-mc-metrics-${GOOS}-${GOARCH}"
+  package_name="repack-mc-metrics-${GOOS}-${GOARCH}"
 
   FILE_EXTENSION=""
   if [ $GOOS = "windows" ]; then

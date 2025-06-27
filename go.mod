@@ -1,4 +1,4 @@
-module reencrypt-mc-metrics
+module repack-mc-metrics
 
 go 1.24.2
 
